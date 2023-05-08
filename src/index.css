@@ -65,3 +65,9 @@ a:hover{
     width: 80px;
     height: 80px;
 }
+
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

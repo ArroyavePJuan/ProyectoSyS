@@ -1,5 +1,20 @@
-import {Link} from 'react-router-dom'
+
 import Header from '../Header'
+
+const productos = [
+  {
+      "id": 1,
+      "nombre": "Laptop",
+      "precio": 1000.00,
+      "descripcion": "Computadora portátil"
+  },
+  {
+      "id": 2,
+      "nombre": "Teléfono",
+      "precio": 500.00,
+      "descripcion": "Teléfono móvil"
+  }
+]
 
 const Productos = () => {
   return (
@@ -7,20 +22,15 @@ const Productos = () => {
         <Header />
         <section className='fondo'>
         {
-            Productos.map (producto => 
+            productos.map((producto)=>(
               // eslint-disable-next-line react/jsx-key
-              <section className='card'>
-                <img src="" alt="" />
-                <section>
-                  <p>{producto.nombre}</p>
-                  <p>{producto.apellido}</p>
+                <section className='card'>
+                    <p>{producto.nombre}</p>
+                    <p>{producto.descripcion}</p>
+                    <p>{producto.precio}</p>
                 </section>
-              </section>
-              
-              
-              
-              )
-          }
+            ))
+        }
         </section>
     </main>
   )

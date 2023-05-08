@@ -1,7 +1,21 @@
-import {Link} from 'react-router-dom'
+
 import Header from '../Header'
 
-import clientes from '../../assets/clientes.json'
+const clientes = [
+  {
+      "id": 1,
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "correo": "jperez@mail.com"
+  },
+  {
+      "id": 2,
+      "nombre": "María",
+      "apellido": "González",
+      "correo": "mgonzalez@mail.com"
+  }
+]
+
 
 const Clientes = () => {
   return (
@@ -17,6 +31,7 @@ const Clientes = () => {
                 <section>
                   <p>{cliente.nombre}</p>
                   <p>{cliente.apellido}</p>
+                  <p>{cliente.correo}</p>
                 </section>
               </section>
               
