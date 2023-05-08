@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "nombre": "Laptop",
+        "precio": 1000.00,
+        "descripcion": "Computadora portátil"
+    },
+    {
+        "id": 2,
+        "nombre": "Teléfono",
+        "precio": 500.00,
+        "descripcion": "Teléfono móvil"
+    }
+]
